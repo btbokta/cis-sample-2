@@ -28,7 +28,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" exact={true} element={<Home/>}/>
-      <Route path="/login/callback" element={<LoginCallback loadingElement={<Loading/>}/>}/>
+      <Route path="login/callback" element={<LoginCallback loadingElement={<Loading/>}/>}/>
       <Route path="login/dpop" element={<DPOPCallback loadingElement={<Loading/>}/>}/>
       <Route path="/messages" element={<RequiredAuth/>}>
         <Route path="" element={<Messages/>}/>
