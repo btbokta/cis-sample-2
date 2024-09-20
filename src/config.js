@@ -28,7 +28,7 @@ export default {
     pkce: true,
     disableHttpsCheck: OKTA_TESTING_DISABLEHTTPSCHECK
   },
-  resourceServer: {
+  /*resourceServer: {
     messagesUrl: 'http://localhost:8000/api/messages',
     privateMessageUrl: 'http://localhost:8000/api/highlyPrivateMessages'
   },
@@ -36,5 +36,14 @@ export default {
   dpopWithNonceGeneratorUrl: 'http://localhost:8000/getDPOPHeaderWithNonce',
   dpopForResourceUrl: 'http://localhost:8000/getDPOPHeaderForResource',
   cibaInitiateUrl: 'http://localhost:8000/initiateCIBAFlow',
-  cibaTokenUrl: 'http://localhost:8000/getCIBAToken',
+  cibaTokenUrl: 'http://localhost:8000/getCIBAToken',*/
+  resourceServer: {
+    messagesUrl: 'https://cis-sample-apiserver.vercel.app/api/messages',
+    privateMessageUrl: 'https://cis-sample-apiserver.vercel.app/api/highlyPrivateMessages'
+  },
+  dpopGeneratorUrl: 'https://cis-sample-apiserver.vercel.app/getDPOPHeader',
+  dpopWithNonceGeneratorUrl: 'https://cis-sample-apiserver.vercel.app/getDPOPHeaderWithNonce',
+  dpopForResourceUrl: 'https://cis-sample-apiserver.vercel.app/getDPOPHeaderForResource',
+  cibaInitiateUrl: 'https://cis-sample-apiserver.vercel.app/initiateCIBAFlow',
+  cibaTokenUrl: 'https://cis-sample-apiserver.vercel.app/getCIBAToken',
 };
