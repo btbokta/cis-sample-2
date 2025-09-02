@@ -30,7 +30,7 @@ const Home = () => {
   }, [authState, oktaAuth]); // Update if authState changes
 
   const login = async () => {
-    await oktaAuth.signInWithRedirect({scopes: ['openid', 'email', 'profile', 'okta.myAccount.phone.manage', 'offline_access']});
+    await oktaAuth.signInWithRedirect({scopes: ['openid', 'email', 'profile', 'offline_access']});
   };
 
 
