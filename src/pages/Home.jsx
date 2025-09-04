@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Header as="h1">Okta Identity Solution</Header>
+        <Header as="h1">MYID Epcot Sample App</Header>
 
         { authState.isAuthenticated && !userInfo
         && <div>Loading user information...</div>}
