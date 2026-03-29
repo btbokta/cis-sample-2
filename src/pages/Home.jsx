@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Header as="h1">MYID Epcot Sample App</Header>
+        <Header as="h1">Acme App</Header>
 
         { authState.isAuthenticated && !userInfo
         && <div>Loading user information...</div>}
